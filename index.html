@@ -4,8 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet shop</title>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/f9e47f9e15.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI + Tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryBtn: '#FFDC26',
+                        bgPrimary: 'rgba(255, 249, 244, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .fontSora {
+            font-family: "Sora", serif;
+        }
+
+        .fontDisplay {
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <!-- navigation menu -->
+        <nav class="bg-bgPrimary">
+            <div class="flex justify-between items-center  fontSora w-11/12 mx-auto py-7">
+                <!-- left part -->
+                <div class="flex items-center gap-1">
+                    <img src="c1-assets/logo-header.png" alt="">
+                    <p class="text-2xl hidden lg:block">Browse<span class="text-primaryBtn">4</span>Pets</p>
+                </div>
 
+                <!-- dropdown -->
+                <div class="flex justify-self-end md:hidden lg:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  pr-12 shadow">
+                            <li><a href="">Find a pet</a></li>
+                            <li><a href="">Breeds</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- middle part -->
+                <div class="hidden lg:block">
+                    <ul class="flex gap-5 text-xl">
+                        <li><a href="">Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- right part -->
+                <div class="space-x-2 text-xl hidden md:block lg:block">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="border-primaryBtn border-2 px-5 py-2 rounded-lg ">Login</button>
+                    <button class="bg-primaryBtn px-5 py-2 rounded-lg">Register</button>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Header main section -->
+        <!-- main header container -->
+        <div class=" w-11/12 mx-auto mb-40">
+            <!-- text part -->
+            <div class="space-y-5 bg-[url(c1-assets/cat-big.png)] pt-24 pb-72">
+                <h1 class="fontDisplay text-6xl leading-tight">Pamper Your Pet, <br> Because They Deserve <br> the Bes
+                </h1>
+                <p class="fontSora">Discover a world of treats, toys, and essentials handpicked for <br> your furry
+                    friends. Shop now and make tails wag with
+                    joy!</p>
+                <button class="bg-primaryBtn px-5 py-2 rounded-lg fontSora">Find a pet</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    </main>
+    <footer></footer>
 </body>
 </html>
