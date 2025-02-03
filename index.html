@@ -17,6 +17,7 @@
                         clifford: '#da373d',
                         primaryBtn: '#FFDC26',
                         bgPrimary: 'rgba(255, 249, 244, 1)',
+                        cartColor: 'rgba(249, 223, 138, 1)',
                     }
                 }
             }
@@ -41,7 +42,7 @@
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="hidden">
         <!-- navigation menu -->
         <nav class="bg-bgPrimary">
             <div class="flex justify-between items-center  fontSora w-11/12 mx-auto py-7">
@@ -72,7 +73,7 @@
 
                 <!-- middle part -->
                 <div class="hidden lg:block">
-                    <ul class="flex gap-5 text-xl">
+                    <ul class="flex gap-6 text-xl">
                         <li><a href="">Find a pet</a></li>
                         <li><a href="">Breeds</a></li>
                         <li><a href="">Contact us</a></li>
@@ -106,6 +107,68 @@
     </header>
 
     <main>
+        <!-- browse by categories section -->
+        <section class="w-11/12 mx-auto">
+            <h1 class="fontDisplay text-3xl mb-6">Browse By Categories</h1>
+
+            <!-- cart container -->
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 lg:gap-6">
+                <!-- 1st card -->
+                <div class="text-center bg-cartColor px-8 py-10 lg:px-16 lg:py-10 rounded-lg">
+                    <div class="p-6 rounded-full bg-white mb-6 flex justify-center flex justify-center">
+                        <img src="c1-assets/dog-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-2 fontDisplay">Dog</h3>
+                    <p class="fontSora">3 items</p>
+                </div>
+
+                <!-- 2nd card -->
+                <div class="text-center bg-cartColor px-8 py-10 lg:px-16 lg:py-10 rounded-lg">
+                    <div class="p-6 rounded-full bg-white mb-6 flex justify-center ">
+                        <img src="c1-assets/fish-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-2 fontDisplay">Dog</h3>
+                    <p class="fontSora">3 items</p>
+                </div>
+
+                <!-- 3rd card -->
+                <div class="text-center bg-cartColor px-8 py-10 lg:px-16 lg:py-10 rounded-lg">
+                    <div class="p-6 rounded-full bg-white mb-6 flex justify-center">
+                        <img src="c1-assets/cat-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-2 fontDisplay">Dog</h3>
+                    <p class="fontSora">3 items</p>
+                </div>
+
+                <!-- 4rt card -->
+                <div class="text-center bg-cartColor px-8 py-10 lg:px-16 lg:py-10 rounded-lg">
+                    <div class="p-6 rounded-full bg-white mb-6 flex justify-center">
+                        <img src="c1-assets/bird-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-2 fontDisplay">Dog</h3>
+                    <p class="fontSora">3 items</p>
+                </div>
+
+                <!-- 5th card -->
+                <div class="text-center bg-cartColor px-8 py-10 lg:px-16 lg:py-10 rounded-lg">
+                    <div class="p-6 rounded-full bg-white mb-6 flex justify-center">
+                        <img src="c1-assets/mouse-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-2 fontDisplay">Dog</h3>
+                    <p class="fontSora">3 items</p>
+                </div>
+
+                <!-- 6th card -->
+                <div class="text-center bg-cartColor px-8 py-10 lg:px-16 lg:py-10 rounded-lg">
+                    <div class="p-6 rounded-full bg-white mb-6 flex justify-center">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-2 fontDisplay">Dog</h3>
+                    <p class="fontSora">3 items</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of browse by catagories section -->
     </main>
     <footer></footer>
 </body>
